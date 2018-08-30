@@ -1,0 +1,225 @@
+@mixin overlay {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1;
+
+}
+
+$primary: #444;
+$text-main: rgb(32, 33, 36);
+
+body {
+    position: relative;
+
+    a.navbar-brand {
+        color: gold;
+    }
+
+    .btn {
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        i {
+            margin-right: 5px;
+        }
+    }
+    nav {
+        z-index: 9;
+    }
+
+    .starter-text {
+        text-align: center;
+        z-index: 9;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1,
+        p {
+            color: aliceblue;
+        }
+
+    }
+
+    #showcase {
+        margin: 0;
+        padding: 0;
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        &:before {
+            @include overlay;
+        }
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: middle;
+        align-content: center;
+    }
+
+    .props {
+        padding: 30px 0 50px 0;
+        text-align: center;
+        div.lead {
+            margin-top: 30px;
+        }
+
+        hr {
+            margin: 10px auto;
+        }
+        .images {
+            padding: 10px 0;
+            .row {
+
+                img {
+                    margin: auto;
+                    width: 5rem;
+                    display: block;
+                    margin: 10px auto;
+                }
+            }
+        }
+
+        .alert {
+            p {
+                margin: 0;
+            }
+        }
+        .mdc-typography--headline4 {
+            color: $text-main;
+        }
+    }
+
+    .dld-sec {
+        padding: 50px 10px;
+        height: auto;
+        background: #eee;
+        text-align: center;
+
+        h4 {
+            margin-bottom: 15px;
+        }
+
+        div.lead {
+            padding: 15px 0;
+        }
+        .download-links {
+            a {
+                display: block;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .mdc-typography--headline4 {
+            color: $text-main;
+        }
+    }
+
+    .tutorials {
+        background-image: url(../img/bg2.jpg);
+        width: 100%;
+        color: #fff;
+        background-size: cover;
+        text-align: center;
+        .overlay {
+            @include overlay;
+            position: relative;
+        }
+        .tut {
+            padding: 40px 10px;
+            a {
+                color: #DFC97A;
+
+                &:hover {
+                    color: darken(#DFC97A, 20);
+                    transition: 0.2s ease-out;
+                    text-decoration: none;
+                }
+
+            }
+
+            div.lead {
+                margin-bottom: 0;
+
+                hr {
+                    width: 150px;
+                    margin: 5px auto;
+                    height: 5px;
+                }
+            }
+
+            h5.lead {
+                color: rgba(255, 255, 255, 0.8)
+            }
+            .row {
+                margin-bottom: 20px;
+                i {
+                    font-size: 5rem;
+                    margin: 10px auto;
+                    width: 100%;
+                    color: #DFC97A;
+                }
+
+                .colm {
+                    padding-bottom: 15px;
+
+                }
+                .mg {
+                    padding: 10px;
+                    margin: 10px;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+        img {
+            margin: auto;
+            width: 5rem;
+            display: block;
+            margin: 10px auto;
+        }
+
+    }
+
+    footer {
+        padding: 50px 20px 5px;
+        margin: 0;
+        text-align: center;
+        background: linear-gradient( 45deg, #abbaab, #fff);
+        p {
+            margin-bottom: 5px;
+            i {
+                color: red;
+            }
+
+        }
+        a.btn-link {
+            &:hover {
+                text-decoration: none;
+                transition: all ease-out;
+            }
+        }
+
+    }
+    .active {
+        border-bottom: 2px solid gold;
+        transition: all 0.3s ease-out;
+    }
+    .navbar-brand {
+        span {}
+    }
+}

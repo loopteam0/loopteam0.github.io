@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/mdc.typography.min.css">
+    <link rel="stylesheet" href="./styles/sal.css">
 
 </head>
 
@@ -27,7 +28,8 @@
         <nav class="navbar fixed-top  navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">LOOP <span>CLIENT</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -57,7 +59,7 @@
 
                 <p class="lead">Currently in BETA, but go ahead and try it!</p>
 
-                <a href="#download" class="btn btn-warning btn-lg mr-1"><i class="fas fa-download"></i>Try now</a>
+                <a href="#download" class="btn btn-warning mr-1" data-sal="slide-up"><i class="fas fa-download"></i>download</a>
 
             </div>
 
@@ -67,37 +69,42 @@
 
     <section id="props" class="props">
         <div class="container">
-            <div class="lead">
-                <h3 class="mdc-typography--headline4">Loop client Serves Movies, TV Shows <br> Games and Others from Torrents</h3>
+            <div data-sal="slide-down" class="lead">
+                <h3 class="mdc-typography--headline4">Loop client Serves Movies, TV Shows <br> Games and Others from
+                    Torrents</h3>
                 <hr>
             </div>
 
             <div class="images">
                 <div class="row justify-content-center">
-                    <div class="col-md col-8 ">
+                    <div data-sal="slide-left" class="col-md col-8 ">
                         <div class="">
                             <img src="./img/film.svg" alt="">
                             <div class="text">
                                 <h5>Great Movies and TV Shows</h5>
-                                <p class="lead">Loop Client constantly loops all over the web for the best torrents from the most important sites.</p>
+                                <p class="lead">Loop Client constantly loops all over the web for the best torrents
+                                    from the most important sites.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md col-8">
-                        <div class="">
+                        <div data-sal="slide-right" class="">
                             <img src="./img/no-restrictions.svg" alt="">
                             <div class="text">
                                 <h5> No restrictions</h5>
-                                <p class="lead">Download any movie, TV shows, games, books, softwares and others as many times as you want. All you need to get started is a proper internet connection.</p>
+                                <p class="lead">Download any movie, TV shows, games, books, softwares and others as
+                                    many times as you want. All you need to get started is a proper internet
+                                    connection.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md col-8">
+                    <div data-sal="slide-left" class="col-md col-8">
                         <div class="">
                             <img src="./img/quality.svg" alt="">
                             <div class="text">
                                 <h5>The best quality</h5>
-                                <p class="lead">Download your movie or episode instantly in <strong>HD</strong>, <strong>1080p</strong>,
+                                <p class="lead">Download your movie or episode instantly in <strong>HD</strong>,
+                                    <strong>1080p</strong>,
                                     <strong>720p</strong>, or
                                     <strong>3D</strong> resolution and with subtitles. And then keep watching.</p>
                             </div>
@@ -106,7 +113,8 @@
                 </div>
             </div>
             <div class="alert alert-danger">
-                <p class="text-secondary"><i class="fas fa-exclamation-circle"></i> Downloading copyrighted material may be illegal in your country. Use at your own risk</p>
+                <p class="text-secondary"><i class="fas fa-exclamation-circle"></i> Downloading copyrighted material
+                    may be illegal in your country. Use at your own risk</p>
             </div>
         </div>
     </section>
@@ -120,36 +128,42 @@
                 <p></p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-5 col-sm-7 col-11">
+                <div data-sal="slide-left" class="col-md-5 col-sm-7 col-11">
                     <h4 class="mdc-typography--headline5">Windows</h4>
                     <div class="download-links">
-                        <a href="http://bit.ly/loop-06-winx32" target="_blank" class="mdc-typography--button btn btn-warning "><i class="fab fa-windows"></i> Loop Client 0.6 x32</a>
+                        <a href="http://bit.ly/loop-06-winx32" target="_blank" class="mdc-typography--button btn btn-warning "><i
+                                class="fab fa-windows"></i> Loop Client 0.6 x32</a>
                     </div>
                     <br>
                     <div class="download-links">
-                        <a href="http://bit.ly/loop-06-winx64" target="_blank" class="mdc-typography--button btn btn-warning"><i class="fab fa-windows"> </i> Loop Client 0.6 x64</a>
+                        <a href="http://bit.ly/loop-06-winx64" target="_blank" class="mdc-typography--button btn btn-warning"><i
+                                class="fab fa-windows"> </i> Loop Client 0.6 x64</a>
                     </div>
                     <p>Windows 7 and above</p>
                 </div>
-                <div class="col-md-5 col-sm-7 col-11">
+                <div data-sal="slide-right" class="col-md-5 col-sm-7 col-11">
                     <h4 class="mdc-typography--headline5">Mac OSX</h4>
                     <div class="download-links">
-                        <a href="http://bit.ly/looptimemacx32bit" target="_blank" class="mdc-typography--button btn btn-warning disabled"><i class="fab fa-apple"></i> Loop 0.6 Client x32</a>
+                        <a href="http://bit.ly/looptimemacx32bit" target="_blank" class="mdc-typography--button btn btn-warning disabled"><i
+                                class="fab fa-apple"></i> Loop 0.6 Client x32</a>
                     </div>
                     <br>
                     <div class="download-links">
-                        <a href="http://bit.ly/looptimemacx64bit" target="_blank" class="mdc-typography--button btn btn-warning disabled"><i class="fab fa-apple"> </i> Loop 0.6 Client x64</a>
+                        <a href="http://bit.ly/looptimemacx64bit" target="_blank" class="mdc-typography--button btn btn-warning disabled"><i
+                                class="fab fa-apple"> </i> Loop 0.6 Client x64</a>
                     </div>
                     <p>Mac OSX 10.7 and above</p>
                 </div>
-                <div class="col-md-5 col-sm-7 col-11">
+                <div data-sal="slide-down" class="col-md-5 col-sm-7 col-11">
                     <h4 class="mdc-typography--headline5">Linux</h4>
                     <div class="download-links">
-                        <a href="http://bit.ly/loop-06-linx32" target="_blank" class="mdc-typography--button btn btn-warning "><i class="fab fa-linux"></i>Loop Client 0.6 x32</a>
+                        <a href="http://bit.ly/loop-06-linx32" target="_blank" class="mdc-typography--button btn btn-warning "><i
+                                class="fab fa-linux"></i>Loop Client 0.6 x32</a>
                     </div>
                     <br>
                     <div class="download-links">
-                        <a href="http://bit.ly/loop-06-linx64" disabled target="_blank" class="mdc-typography--button btn btn-warning"><i class="fab fa-linux"> </i>Loop Client 0.6 x64</a>
+                        <a href="http://bit.ly/loop-06-linx64" disabled target="_blank" class="mdc-typography--button btn btn-warning"><i
+                                class="fab fa-linux"> </i>Loop Client 0.6 x64</a>
                     </div>
 
                 </div>
@@ -161,25 +175,26 @@
         <div class="overlay">
             <div class="container-fluid">
                 <div class="tut">
-                    <div class="lead">
+                    <div data-sal="flip-down" class="lead">
                         <h2 class="mdc-typography--headline4">Quick How To</h2>
                         <hr>
                     </div>
                     <div class="row no-gutters justify-content-center">
-                        <div class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal="flip-right" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/utorrent.svg" alt="">
-                                <h5 class="lead"><a href="https://www.techradar.com/news/the-best-free-torrent-client" target="_blank">Download</a> and install a torrent client</h5>
+                                <h5 class="lead"><a href="https://www.techradar.com/news/the-best-free-torrent-client"
+                                        target="_blank">Download</a> and install a torrent client</h5>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal="flip-left" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card  mg">
                                 <img src="./img/loop.svg" alt="">
                                 <h5 class="lead">Download and install Loop Client</h5>
                             </div>
 
                         </div>
-                        <div class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal="flip-right" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/film3.svg" alt="">
                                 <h5 class="lead">Select your favorite Movie or Tv show</h5>
@@ -187,7 +202,7 @@
                             </div>
                         </div>
                         <div class="w-100"></div>
-                        <div class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal="flip-left" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/film2.svg" alt="">
                                 <h5 class="lead">
@@ -195,7 +210,7 @@
                                 </h5>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal="flip-down" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/smile-wink.svg" alt="">
                                 <h5 class="lead">
@@ -213,18 +228,25 @@
         <div class="container">
             <hr>
             <p>Made with <i class="far fa-heart"></i> by THE LOOP TEAM</p>
-            <p>All Rights Reserved &copy; 2018 <a class="btn-link" href="./pages/Readme.html">KEY NOTES</a> <a class="btn-link" href="./pages/TOS.html">TOS</a></p>
+            <p>All Rights Reserved &copy; 2018 <a class="btn-link" href="./pages/Readme.html">KEY NOTES</a> <a class="btn-link"
+                    href="./pages/TOS.html">TOS</a></p>
         </div>
     </footer>
 
     <script src="./js/jquery-3.3.1.slim.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="./js/sal.js"></script>
 
     <script>
         $('body').scrollspy({
             target: '#navbarSupportedContent'
-        })
+        });
+
+        sal({
+            threshold: 1,
+            once: false,
+        });
     </script>
 
 </body>

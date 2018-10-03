@@ -18,6 +18,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    body .starter-text .btn{
+    text-transform: uppercase;
+    }
     body .starter-text h1,
     body .starter-text p {
       color: aliceblue; }

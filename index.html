@@ -59,7 +59,7 @@
 
                 <p class="lead">Currently in BETA, but go ahead and try it!</p>
 
-                <a href="#download" class="btn btn-warning mr-1" data-sal="slide-up"><i class="fas fa-download"></i>download</a>
+                <a href="#download" class="btn btn-warning mr-1 jump" data-sal="slide-up"><i class="fas fa-download"></i>download</a>
 
             </div>
 
@@ -120,7 +120,7 @@
     </section>
 
 
-    <section id="download" class="dld-sec">
+    <section id="download" class="dld-sec jumpto">
         <div class="container">
             <div class="lead">
                 <h2 class="mdc-typography--headline4">Download Loop Client </h2>
@@ -131,12 +131,12 @@
                 <div data-sal="slide-left" class="col-md-5 col-sm-7 col-11">
                     <h4 class="mdc-typography--headline5">Windows</h4>
                     <div class="download-links">
-                        <a href="http://bit.ly/loop-06-winx32" target="_blank" class="mdc-typography--button btn btn-warning "><i
+                        <a href="http://bit.ly/loop-061-winx32" target="_blank" class="mdc-typography--button btn btn-warning "><i
                                 class="fab fa-windows"></i> Loop Client 0.6 x32</a>
                     </div>
                     <br>
                     <div class="download-links">
-                        <a href="http://bit.ly/loop-06-winx64" target="_blank" class="mdc-typography--button btn btn-warning"><i
+                        <a href="http://bit.ly/loop-061-winx64" target="_blank" class="mdc-typography--button btn btn-warning"><i
                                 class="fab fa-windows"> </i> Loop Client 0.6 x64</a>
                     </div>
                     <p>Windows 7 and above</p>
@@ -175,26 +175,26 @@
         <div class="overlay">
             <div class="container-fluid">
                 <div class="tut">
-                    <div data-sal="flip-down" class="lead">
+                    <div data-sal=" down" class="lead">
                         <h2 class="mdc-typography--headline4">Quick How To</h2>
                         <hr>
                     </div>
                     <div class="row no-gutters justify-content-center">
-                        <div data-sal="flip-right" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal=" right" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/utorrent.svg" alt="">
                                 <h5 class="lead"><a href="https://www.techradar.com/news/the-best-free-torrent-client"
                                         target="_blank">Download</a> and install a torrent client</h5>
                             </div>
                         </div>
-                        <div data-sal="flip-left" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal=" left" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card  mg">
                                 <img src="./img/loop.svg" alt="">
                                 <h5 class="lead">Download and install Loop Client</h5>
                             </div>
 
                         </div>
-                        <div data-sal="flip-right" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal=" right" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/film3.svg" alt="">
                                 <h5 class="lead">Select your favorite Movie or Tv show</h5>
@@ -202,7 +202,7 @@
                             </div>
                         </div>
                         <div class="w-100"></div>
-                        <div data-sal="flip-left" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal=" left" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/film2.svg" alt="">
                                 <h5 class="lead">
@@ -210,7 +210,7 @@
                                 </h5>
                             </div>
                         </div>
-                        <div data-sal="flip-down" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
+                        <div data-sal=" down" class="col-md-4 col-lg-3 col-11 col-sm-5 colm">
                             <div class="card mg">
                                 <img src="./img/smile-wink.svg" alt="">
                                 <h5 class="lead">
@@ -237,8 +237,21 @@
     <script src="./js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="./js/sal.js"></script>
+    <script src="./js/jump.js"></script>
+   <script type="module">
+    //    import jump from './js/jump.js';
+    //    const button = document.querySelector('.jump');
+    //     button.addEventListener('click',() =>{
+    //         jump('.jumpto', {
+    //         duration: 3000,
+    //         offset: 0,
+    //         callback: undefined,
+    //         easing: easeInOutQuad,
+    //         a11y: false
+    //         })
+    //     })
 
-    <script>
+
         $('body').scrollspy({
             target: '#navbarSupportedContent'
         });
@@ -246,7 +259,10 @@
         sal({
             threshold: 1,
             once: false,
-        });
+        }); 
+
+       
+        
     </script>
 
 </body>

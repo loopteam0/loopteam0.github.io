@@ -1,5 +1,5 @@
 <?php
-    $to = 'demo@site.com';
+    $to = 'info@brandafrik.com';
     $name = $_POST["name"];
     $email= $_POST["email"];
     $text= $_POST["message"];
@@ -27,5 +27,3 @@
     }else{
         echo 'failed';
     }
-
-?>
